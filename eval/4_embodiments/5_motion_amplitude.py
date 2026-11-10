@@ -23,10 +23,10 @@ sys.path.append(os.path.join(os.getcwd(), "pkgs", "co-tracker"))
 sys.path.append(os.path.join(os.getcwd(), "pkgs", "sam2"))
 
 # Grounding DINO
-import GroundingDINO.groundingdino.datasets.transforms as T
-from GroundingDINO.groundingdino.models import build_model
-from GroundingDINO.groundingdino.util.slconfig import SLConfig
-from GroundingDINO.groundingdino.util.utils import clean_state_dict, get_phrases_from_posmap
+import groundingdino.datasets.transforms as T
+from groundingdino.models import build_model
+from groundingdino.util.slconfig import SLConfig
+from groundingdino.util.utils import clean_state_dict, get_phrases_from_posmap
 
 
 # segment anything

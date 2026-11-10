@@ -5,6 +5,9 @@
 # LICENSE file in the root directory of this source tree.
 import os
 
+if os.environ.get("RBENCH_USE_TORCHADA") == "1":
+    import torchada  # noqa: F401; before torch.utils.cpp_extension
+
 from setuptools import find_packages, setup
 
 # Package metadata
