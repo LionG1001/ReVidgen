@@ -22,6 +22,9 @@
 
 import glob
 import os
+
+if os.environ.get("RBENCH_USE_TORCHADA") == "1":
+    import torchada  # noqa: F401; before torch.utils.cpp_extension
 import subprocess
 
 import torch

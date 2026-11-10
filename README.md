@@ -1,3 +1,5 @@
+> 本地 MUSA review 版本：入口、依赖安装、运行与验证边界见 [docs/musa.md](docs/musa.md)。上游基线 `b03df27`。
+
 <div align="center">
 <div align="center">
   <img src="assets/logo.png" width="160"/>

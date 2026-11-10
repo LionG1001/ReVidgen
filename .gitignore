@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+checkpoints/
+data/
+results/
+*.so
+*.pt
+*.pth
+*.safetensors
+*.distcp
+*.log
+.musa-install/

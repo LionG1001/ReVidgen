@@ -14,7 +14,6 @@ import time, random
 
 from transformers import AutoModelForImageTextToText, AutoProcessor
 import torch
-from torchvision.io import write_video
 
 def create_llm_client(model_name, api_key):
     if model_name.lower() == "gpt":
@@ -71,6 +70,7 @@ class Video_preprocess():
         return yuv_frame
 
     def frames_to_video(self, frames, output_path, fps=8):
+        from torchvision.io import write_video
         yuv_frames = [self.rgb_to_yuv(frame) for frame in frames]
         video_tensor = torch.from_numpy(np.array(yuv_frames)).to(torch.uint8)
         write_video(output_path, video_tensor, fps, video_codec='h264', options={'crf': '18'})
